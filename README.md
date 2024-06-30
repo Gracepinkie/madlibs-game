@@ -16,3 +16,7 @@ This project is a JavaScript implementation of a Madlibs game inspired by the da
 - JavaScript: Logic and interactivity.
 
 
+![Screenshot 2024-06-30 214302](https://github.com/Gracepinkie/madlibs-game/assets/102969375/f00fb6c1-a0fa-4395-8202-8f2097e87edb)
+
+![Screenshot 2024-06-30 214629](https://github.com/Gracepinkie/madlibs-game/assets/102969375/c6c7950e-22e5-4d3b-a474-505b07e8b97c)
+
