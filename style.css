@@ -1,0 +1,248 @@
+/**
+ * Your CSS goes here.
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Edu TAS Beginner", cursive;
+}
+
+  
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+} 
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid black;
+    border-top-color: red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('https://blz-contentstack-images.akamaized.net/v3/assets/blt77f4425de611b362/blt6d7b0fd8453e72b9/646e720a71d9db111a265e8c/d4-open-graph_001.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+} 
+
+.video-background {
+    position:absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+#background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}  
+@font-face {
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt095210837aa1e0f0/625005917f50a04889644422/AlegreyaSans-Regular.ttf");
+    font-display: swap;
+  }
+@font-face {
+    font-family: "Exocet Blizzard OT";
+    font-weight: 500;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
+    font-display: swap;
+}
+
+h1{
+ 
+    text-align: center;
+    font-family:"Exocet Blizzard OT";
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    font-display: swap;
+    font-weight: 400;
+    line-height: 1.05;
+    text-transform: uppercase;
+    color: #D2C8AE;
+    filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Edu TAS Beginner", cursive;
+    width: 100%;
+    font-size: 20px;
+}
+.madLibsEdit{
+    background: rgba(255, 255, 255, 0.01);
+    padding: 1em;
+    margin: 1em ;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(67, 67, 42, 0.527) 0.5em 0.5em; 
+    max-width: 40%;
+    width: 40%;
+    color: antiquewhite;
+    border: solid 1px grey;
+    line-height: 2em;
+}
+.madLibsPreview{
+    background: rgba(255, 255, 255, 0.01);
+    padding: 1em;
+    border: solid 1px grey;
+    margin: 1em ;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(67, 67, 42, 0.527) 0.5em 0.5em;
+    max-width:40%;
+    width: 40%;
+    color: antiquewhite;
+    line-height: 2em;
+    filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+
+}
+
+
+h3{
+    font-family:"Exocet Blizzard OT";
+    text-align:center;
+    filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+}
+.btn{
+    text-align: center; 
+
+}
+button{
+   font-family:"Exocet Blizzard OT";
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+   width: 100px;
+   background: rgba(255, 255, 255, 0.01);
+   box-shadow: 1px 1px 1px black;
+   filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+   padding: 10px 20px;
+   cursor: pointer;
+   color: #D2C8AE;
+   backdrop-filter: blur(10px);
+   display: inline-block;
+   margin: 10px;
+
+
+}
+
+
+@media screen and (max-width: 900px){
+    body{
+        overflow: scroll; 
+        flex-flow:column;
+    }
+    main{
+        flex-flow: column;
+        max-width: 100%;
+
+
+    }
+    .madLibsEdit{
+        max-width: 100%;
+        width: 95%;
+
+    }
+    .madLibsPreview{
+        max-width: 100%;
+        width: 95%;
+    }
+    input{
+        width: 50px;
+    }
+    button{
+        width: 50px;
+
+        flex-flow: column;
+    }
+    .background-video{
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 0 5px;        
+        margin:5px;
+        height: 100vh;
+     
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+
+}
+.opacity{
+
+
+    opacity: 0.5;
+}
+.no-opacity{
+    opacity: 1.0;
+}
+ input:focus{
+     /* background: lightgreen; */
+     opacity: 1.0; 
+
+ }
+a{
+    justify-content: center;
+
+}
+
+ 
